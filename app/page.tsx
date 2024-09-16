@@ -4,7 +4,7 @@ import Balancer from "react-wrap-balancer";
 // import Categories from "../components/CategoriesPage";
 // Components
 import Link from "next/link";
-import Hero from "../components/Hero/index.jsx";
+// import Hero from "../components/Hero/index.jsx";
 // Icons
 
 import { File, Pen, Tag, Boxes, User, Folder } from "lucide-react";
@@ -24,13 +24,13 @@ export default function Home() {
 const ExampleJsx = () => {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
 
       <div className="mx-auto max-w-5xl">
         <article className="prose-m-none">
           <h1>
             <Balancer>
-              Hello World, welcome to the Next.js and WordPress Starter by
+              Hello World CHEEK
               <a href="https://9d8.dev">9d8</a>.
             </Balancer>
           </h1>
