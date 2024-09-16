@@ -1,0 +1,135 @@
+/* components/PageComponent.module.css */
+.container {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.navContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+}
+
+.navCta a {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.bgGradient {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 40vw;
+  border: solid 1px black;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bgGradientLeft {
+  left: 0;
+}
+
+.bgGradientRight {
+  right: 0;
+  transform: rotate(85deg);
+}
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cta button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.cta button:hover {
+  background-color: #555;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.blob1 {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 10%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.blob2 {
+  width: 150px;
+  height: 150px;
+  top: 30%;
+  right: 20%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.blob3 {
+  width: 200px;
+  height: 200px;
+  bottom: 20%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #333;
+}
