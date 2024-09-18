@@ -43,9 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body
-        className={cn("min-h-screen font-sans antialiased", fontSans.variable)}
-      >
+      <body className={cn(" font-sans antialiased", fontSans.variable)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -78,7 +76,7 @@ const Nav = ({ className, children, id }: NavProps) => {
   return (
     <nav
       className={cn(
-        "sticky z-50 top-0 bg-background",
+        "sticky z-50 bg-white top-0 ",
         "border-b",
         "fade-in",
         className

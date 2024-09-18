@@ -46,7 +46,7 @@
   top: 0;
   height: 100vh;
   width: 40vw;
-  border: solid 1px black;
+  /* border: solid 1px black; */
   z-index: -1;
   pointer-events: none;
 }

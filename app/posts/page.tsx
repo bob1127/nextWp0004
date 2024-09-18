@@ -4,6 +4,7 @@ import {
   getAllTags,
   getAllCategories,
 } from "@/lib/wordpress";
+
 import Marquee from "react-fast-marquee";
 import {
   Pagination,

@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import styles from "./style.module.css"; // Import CSS Module for component styles
-
+import GsapText from "../../components/RevealText/index";
 const Hero = () => {
   useEffect(() => {
     // GSAP animations
@@ -53,7 +53,7 @@ const Hero = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.navContainer}>
+      {/* <div className={styles.navContainer}>
         <div className={styles.nav}>
           <div className={styles.navLogo}>
             <a href="#">JBY London</a>
@@ -68,7 +68,7 @@ const Hero = () => {
             <a href="#">connect with us</a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={`${styles.bgGradient} ${styles.bgGradientLeft}`}>
         <svg
@@ -138,15 +138,20 @@ const Hero = () => {
 
       <div className="flex flex-col justify-center items-center ">
         <div className="flex  flex-col justify-center items-center">
-          <h1 className="dark:text-white ">一起玩生活。多彩每一天</h1>
-          <div>
-            <button>Write us a letter</button>
-          </div>
-          <div className="dark:text-white  w-1/2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-            voluptates <br></br> enim expedita, esse laboriosam veniam!
-            Officiis, harum? Velit, mollitia vero.
-          </div>
+          <h1 className="dark:text-white ">CHICK。FUN</h1>
+          <GsapText
+            fontSize="80px"
+            text="奇客生活"
+            lineHeight="90px"
+            id="text4"
+          />
+          <GsapText
+            fontSize="40px"
+            text="使您的業務被看見"
+            lineHeight="90px"
+            id="text4"
+          />
+          <h2></h2>
         </div>
       </div>
 
