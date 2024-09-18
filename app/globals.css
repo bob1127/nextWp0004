@@ -65,7 +65,10 @@
     --ring: 0 0% 83.1%;
   }
 }
-
+article{
+  width: 70% !important;
+  margin: 0 !important;
+}
 @layer base {
   * {
     @apply border-border;

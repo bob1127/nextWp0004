@@ -111,7 +111,7 @@ const ExampleJsx = () => {
         </div>
       </section>
 
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto flex justify-center max-w-7xl">
         <article className="prose-m-none">
           <h1>
             <Balancer>

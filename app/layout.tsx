@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
+import { NextSeo } from "next-seo";
 
 import "./globals.css";
 import Marquee from "react-fast-marquee";
@@ -42,6 +43,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      {/* <NextSeo
+        title="關於我們"
+        description="這是關於我們的詳細介紹"
+        canonical="https://www.yourdomain.com/about" 
+        openGraph={{
+          url: "https://www.yourdomain.com/about",
+          title: "關於我們",
+          description: "這是關於我們的詳細介紹",
+          images: [
+            {
+              url: "https://www.yourdomain.com/static/image.jpg",
+              alt: "關於我們的圖片",
+            },
+          ],
+          site_name: "你的網站名",
+        }}
+        twitter={{
+          handle: "@yourtwitterhandle",
+          site: "@yoursite",
+          cardType: "summary_large_image",
+        }}
+      /> */}
       <head />
       <body className={cn(" font-sans antialiased", fontSans.variable)}>
         <ThemeProvider
@@ -151,23 +174,19 @@ const Footer = () => {
         </div>
         <div className="left w-full md:w-1/2">
           <div className="txt">
-            <h1 className="w-1/2 text-[100px] text-black">CHEEK</h1>
+            <h1 className="  w-1/2  text-[50px] xl:text-[70px] 2xl:text-[100px] text-black">
+              CHEEK
+            </h1>
           </div>
         </div>
         <div className="right  pr-10  flex flex-col w-full md:w-1/2">
-          <div className="flex py-4 flex-row justify-end items-center">
+          <div className="flex py-4  mt-3 flex-col md:flex-row justify-end items-start md:items-center">
             <b className="text-[20px] text-right">波波麗的生活實記</b>
             <div className="border border-black rounded-[30px] duration-500 hover:w-[160px] ml-3 hover:bg-[#95f116] group w-[100px] bg-white py-1 text-center">
               <p className="block group-hover:hidden">一起玩生活</p>
               <div className="hidden group-hover:block   duration-500">
                 <Marquee>
-                  <div>
-                    Life ipsum dolor, sit amet consectetur adipisicing elit.
-                    Eligendi asperiores laudantium reprehenderit maxime officia
-                    magni vitae provident blanditiis saepe excepturi, adipisci
-                    eveniet! Adipisci soluta tenetur enim provident. Facere, est
-                    facilis.
-                  </div>
+                  <div className="mx-2">各處探店 發覺美好的隱藏小點</div>
                 </Marquee>
               </div>
             </div>
@@ -176,13 +195,7 @@ const Footer = () => {
               <p className="block group-hover:hidden">一起吃餐廳</p>
               <div className="hidden group-hover:block   duration-500">
                 <Marquee>
-                  <div>
-                    Life ipsum dolor, sit amet consectetur adipisicing elit.
-                    Eligendi asperiores laudantium reprehenderit maxime officia
-                    magni vitae provident blanditiis saepe excepturi, adipisci
-                    eveniet! Adipisci soluta tenetur enim provident. Facere, est
-                    facilis.
-                  </div>
+                  <div className="mx-2">各處探店 發覺美好的隱藏小點</div>
                 </Marquee>
               </div>
             </div>
@@ -191,12 +204,7 @@ const Footer = () => {
               <p className="block group-hover:hidden">一起懂知識</p>
               <div className="hidden group-hover:block   duration-500">
                 <Marquee>
-                  <div>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum vitae magnam, quasi at corporis ipsam quisquam
-                    deleniti molestias in facere excepturi, dolore quibusdam
-                    dolorem delectus temporibus incidunt quas harum iure!
-                  </div>
+                  <div className="mx-2">各種生活須知 報給你災</div>
                 </Marquee>
               </div>
             </div>
