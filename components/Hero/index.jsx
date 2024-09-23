@@ -138,16 +138,11 @@ const Hero = () => {
 
       <div className="flex flex-col justify-center items-center ">
         <div className="flex  flex-col justify-center items-center">
-          <h1 className="dark:text-white ">CHICK。FUN</h1>
-          <GsapText
-            fontSize="80px"
-            text="奇客生活"
-            lineHeight="90px"
-            id="text4"
-          />
+          <h1 className="dark:text-white ">極客網頁設計</h1>
+          <GsapText fontSize="80px" text="JEEK " lineHeight="90px" id="text4" />
           <GsapText
             fontSize="40px"
-            text="使您的業務被看見"
+            text="網頁設計案例｜專案"
             lineHeight="90px"
             id="text4"
           />

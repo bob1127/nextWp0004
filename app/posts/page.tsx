@@ -4,7 +4,9 @@ import {
   getAllTags,
   getAllCategories,
 } from "@/lib/wordpress";
+// import img01 from "https://naotta.synergy-ins.co.jp/wp/wp-content/uploads/2023/10/top-mv01-2-scaled.jpg";
 
+import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import {
   Pagination,
@@ -45,11 +47,19 @@ export default async function Page({
         <Marquee>
           <div className="flex">
             <div>
-              <img
+              {/* <Image
+                src={img01}
+                priority
+                placeholder="blur"
+                alt="Logo"
+                width={84}
+                height={30.54}
+              ></Image> */}
+              {/* <img
                 src="https://naotta.synergy-ins.co.jp/wp/wp-content/uploads/2023/10/top-mv01-2-scaled.jpg"
                 alt=""
                 className="w-[450px]"
-              />
+              /> */}
             </div>
             <div>
               <img
